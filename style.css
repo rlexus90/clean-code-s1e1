@@ -162,9 +162,6 @@ li>* {
 }
 
 /* Edit Task */
-.editing .edit {
-  /* display: none; */
-}
 
 .editing .input {
   display: inline-block;
