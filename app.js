@@ -35,7 +35,7 @@ var createNewTaskElement = function (taskString) {
 
   label.innerText = taskString;
   label.classList.add('label');
-  label.classList.add('todo__task-input');
+  label.classList.add('todo__task-label');
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
@@ -163,9 +163,9 @@ addButton.addEventListener("click", ajaxRequest);
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
-  var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit");
-  var deleteButton = taskListItem.querySelector("button.delete");
+  var checkBox = taskListItem.querySelector(".checkbox");
+  var editButton = taskListItem.querySelector(".edit");
+  var deleteButton = taskListItem.querySelector(".delete");
 
 
   //Bind editTask to edit button.
